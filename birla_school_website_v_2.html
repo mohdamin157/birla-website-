@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Birla Open Minds Intl. School - Pampore</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(to right, #002b5c, #0077b6);
+      color: white;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      text-decoration: none;
+      color: #0077b6;
+      font-weight: 600;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: #0077b6;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+      transform-origin: left;
+    }
+    nav a:hover::after {
+      transform: scaleX(1);
+    }
+    .hero {
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Birla_Open_Minds_School.jpg/800px-Birla_Open_Minds_School.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      position: relative;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 43, 92, 0.4);
+    }
+    .hero h2 {
+      font-size: 2.8rem;
+      background-color: rgba(0,0,0,0.6);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      z-index: 1;
+    }
+    section {
+      padding: 3rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      color: #002b5c;
+      margin-bottom: 1rem;
+      border-left: 5px solid #0077b6;
+      padding-left: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+    .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    .brand-section {
+      background: #eaf4fb;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .brand-section h2 {
+      color: #002b5c;
+      margin-bottom: 1rem;
+    }
+    .brand-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+    }
+    .brand-logos img {
+      width: 150px;
+      height: auto;
+      transition: transform 0.3s ease;
+    }
+    .brand-logos img:hover {
+      transform: scale(1.1);
+    }
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      text-decoration: none;
+      font-size: 1.5rem;
+      z-index: 1000;
+    }
+    footer {
+      background: #002b5c;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Birla Open Minds Intl. School</h1>
+    <p>Pampore | Excellence in Education</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#vision">Vision</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#tour">School Tour</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Empowering Future Leaders</h2>
+  </div>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Birla Open Minds International School in Pampore is dedicated to nurturing young minds through a balanced curriculum and a progressive learning approach. Our philosophy blends tradition with innovation to foster confident, lifelong learners.</p>
+  </section>
+
+  <section id="vision">
+    <h2>Mission & Vision</h2>
+    <p><strong>Mission:</strong> To provide an enriching environment that fosters creativity, collaboration, and critical thinking.</p>
+    <p><strong>Vision:</strong> To be a globally respected educational institution that empowers students to achieve their full potential.</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://www.bomispampore.com/assets/img/gallery-4.jpg" alt="Classroom">
+      <img src="https://www.bomispampore.com/assets/img/gallery-2.jpg" alt="Playground">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Birla_Open_Minds_School.jpg/800px-Birla_Open_Minds_School.jpg" alt="School Building">
+    </div>
+  </section>
+
+  <section id="tour">
+    <h2>School Tour</h2>
+    <p>Get a glimpse into the vibrant and engaging environment at Birla Open Minds International School, Pampore through our video tour.</p>
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/3dV9a1IgKdc" title="School Tour" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="brand-section">
+    <h2>Our Trusted Brands</h2>
+    <div class="brand-logos">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0a/Birla_Edutech_logo.png/220px-Birla_Edutech_logo.png" alt="Birla Edutech">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Aditya_Birla_Group_logo.svg/2560px-Aditya_Birla_Group_logo.svg.png" alt="Aditya Birla Group">
+      <img src="https://www.bomispampore.com/assets/img/logo.png" alt="BOMIS Pampore Logo">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@bomispampore.com</p>
+    <p>Phone: 88993 33684</p>
+  </section>
+
+  <a href="https://wa.me/918899333684" class="whatsapp-button" target="_blank" title="Chat with us on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Birla Open Minds International School, Pampore. All rights reserved.</p>
+  </footer>
+</body>
+</html>
